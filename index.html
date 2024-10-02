@@ -3,154 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criminal Watch - Seguridad y Tecnología</title>
+    <title>Criminal Watch</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
             margin: 0;
             padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
         }
-
         header {
-            background-color: #ff0000; /* Rojo */
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #b3b3b3; /* Gris */
+            background-color: #900; /* Color rojo */
+            color: white;
             padding: 15px;
             text-align: center;
         }
-
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333; /* Color gris oscuro */
+        }
         nav a {
-            color: #fff;
-            margin: 0 20px;
+            color: white;
+            padding: 14px 20px;
             text-decoration: none;
-            font-weight: bold;
+            text-align: center;
         }
-
-        .container {
+        nav a:hover {
+            background-color: #900; /* Hover color rojo */
+        }
+        section {
             padding: 20px;
+            display: none;
         }
-
-        h1, h2 {
-            color: #ff0000; /* Rojo */
+        section.active {
+            display: block;
         }
-
-        .section-content {
+        .servicio {
             display: flex;
             justify-content: space-around;
-            flex-wrap: wrap;
             margin-top: 20px;
         }
-
-        .service, .product {
-            background-color: #fff;
-            border: 1px solid #b3b3b3;
-            padding: 20px;
-            width: 30%;
-            margin-bottom: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .service img, .product img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        footer {
-            background-color: #b3b3b3; /* Gris */
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        @media (max-width: 768px) {
-            .service, .product {
-                width: 100%;
-            }
+        .servicio img {
+            width: 150px;
+            height: 150px;
         }
     </style>
+    <script>
+        function mostrarSeccion(seccion) {
+            var secciones = document.querySelectorAll('section');
+            secciones.forEach(function(sec) {
+                sec.classList.remove('active');
+            });
+            document.getElementById(seccion).classList.add('active');
+        }
+    </script>
 </head>
 <body>
+    <header>
+        <h1>Criminal Watch</h1>
+    </header>
 
-<header>
-    <h1>Criminal Watch - Seguridad y Tecnología</h1>
-</header>
+    <nav>
+        <a href="javascript:void(0)" onclick="mostrarSeccion('nosotros')">Nosotros</a>
+        <a href="javascript:void(0)" onclick="mostrarSeccion('servicios')">Servicios</a>
+        <a href="javascript:void(0)" onclick="mostrarSeccion('contacto')">Contacto</a>
+    </nav>
 
-<nav>
-    <a href="#nosotros">Sobre Nosotros</a>
-    <a href="#productos">Productos</a>
-    <a href="#contacto">Contacto</a>
-</nav>
-
-<div class="container">
-    <section id="nosotros">
-        <h2>Sobre Nosotros</h2>
-        <p>En <strong>Criminal Watch</strong>, somos especialistas en la venta de cámaras de seguridad, alarmas para casas y negocios, alarmas comunitarias, dispositivos GPS y mantenimiento de equipos de cómputo. Nuestro objetivo es proteger lo que más te importa con soluciones de seguridad avanzadas y confiables, además de ofrecer soporte técnico y mantenimiento tanto de hardware como de software.</p>
-        <video width="640" height="360" controls utoplay loop>
-    <source src="https://github.com/user-attachments/assets/737d1d86-cfe5-497f-908a-2e9c1d78f334" type="video/mp4">
-   <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="https://github.com/user-attachments/assets/737d1d86-cfe5-497f-908a-2e9c1d78f334" content="width=device-width, initial-scale=1.0">
-    <title>Centrar Video en HTML</title>
-    <style>
-        .video-container {
-            text-align: center;
-    
-    </section>
-
-    <section id="productos">
-        <h2>Productos</h2>
-        <div class="section-content">
-            <div class="product">
-                <img src="https://1drv.ms/i/s!Ak_Z0UgGlt43330Q7lFXILUEHW5n?embed=1&width=660" alt="Cámaras de Seguridad">
-                <h3>Cámaras de Seguridad</h3>
-                <p>Venta e instalación de cámaras de seguridad para vigilancia en tiempo real, tanto en casa como en negocios.</p>
-            </div>
-
-            <div class="product">
-                <img src="https://1drv.ms/i/s!Ak_Z0UgGlt43335T8mLM-YV5tIXz?embed=1&width=293&height=172" alt="Alarmas">
-                <h3>Alarmas para Casa y Negocio</h3>
-                <p>Protege tu hogar o negocio con nuestras avanzadas alarmas de seguridad y sistemas de alerta temprana.</p>
-            </div>
-
-            <div class="product">
-                <img src="https://1drv.ms/i/s!Ak_Z0UgGlt434AjwKlo4EsMeL1ux?embed=1&width=299&height=168" alt="GPS">
-                <h3>GPS</h3>
-                <p>Rastrea y localiza vehículos y personas con nuestros sistemas GPS de alta precisión.</p>
-            </div>
-
-            <div class="product">
-                <img src="https://1drv.ms/i/s!Ak_Z0UgGlt434ABWhsfqj0rprPM3?embed=1&width=450&height=334" alt="Mantenimiento de Computadoras">
-                <h3>Mantenimiento de Equipos de Cómputo</h3>
-                <p>Ofrecemos mantenimiento de hardware y software para equipos de cómputo, garantizando el correcto funcionamiento de tu tecnología.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Para más información sobre nuestros productos y servicios, contáctanos a través de:</p>
-        <ul>
-            <li>Teléfono: (XXX) XXX-XXXX</li>
-            <li>Email: contacto@criminalwatch.com</li>
-            <li>Dirección: Calle de la Seguridad 123, Ciudad, País</li>
-        </ul>
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2024 Criminal Watch. Todos los derechos reservados.</p>
-</footer>
-
-</body>
-</html>
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="active">
+        <h2>Nosotros</h2>
+        <p>Criminal Watch es una empresa dedicada a la seguridad integral. Ofrecemos soluciones de vigilancia, monitoreo y rastreo para garantizar la
