@@ -3,76 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRIMINAL WATCH</title>
-    <img src="https://1drv.ms/i/s!Ak_Z0UgGlt434ALMPg-2Ngs4e9M9?embed=1&width=500&height=500" alt="Logo de Mi Negocio" style="width:200px;height:auto;">
+    <title>Venta y Mantenimiento de Equipos de Seguridad y Computo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
             margin: 0;
             padding: 0;
-            background-color: FF0000;
         }
+
         header {
-            background: #007BFF;
-            color: white;
-            padding: 20px;
+            background-color: #ff0000; /* Rojo */
+            color: #fff;
+            padding: 10px;
             text-align: center;
         }
+
         nav {
-            margin: 10px 0;
+            background-color: #b3b3b3; /* Gris */
+            padding: 15px;
+            text-align: center;
         }
+
         nav a {
+            color: #fff;
             margin: 0 15px;
-            color: white;
             text-decoration: none;
+            font-weight: bold;
         }
-        section {
+
+        .container {
             padding: 20px;
-            margin: 20px;
-            background: white;
-            border-radius: 8px;
         }
+
+        h1, h2 {
+            color: #ff0000; /* Rojo */
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            background-color: #fff;
+            border: 1px solid #b3b3b3;
+            padding: 20px;
+            width: 30%;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .service img {
+            max-width: 100%;
+            height: auto;
+        }
+
         footer {
+            background-color: #b3b3b3; /* Gris */
+            color: #fff;
             text-align: center;
             padding: 10px;
-            background: #007BFF;
-            color: white;
-            position: relative;
+            position: fixed;
             bottom: 0;
             width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .service {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>CRIMINAL WATCH</h1>
-    <nav>
-        <a href="#servicios">Servicios</a>
-        <a href="#sobre-nosotros">Sobre Nosotros</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+    <h1>Nuestros Servicios</h1>
 </header>
 
-<section id="servicios">
-    <h2>Nuestros Servicios</h2>
-    <p>Ofrecemos una variedad de servicios para satisfacer las necesidades de nuestros clientes. Desde consultoría hasta implementación, estamos aquí para ayudar.</p>
-     <p style="font-family: 'Arial', sans-serif; font-size: 40px;">
-</section>
+<nav>
+    <a href="#camaras">Cámaras de Seguridad</a>
+    <a href="#alarmas">Alarmas</a>
+    <a href="#gps">GPS</a>
+    <a href="#mantenimiento">Mantenimiento a Computadoras</a>
+</nav>
 
-<section id="sobre-nosotros">
-    <h2>Sobre Nosotros</h2>
-    <p>Criminal Watch es una empresa dedicada a la seguridad y vigilancia especializada, comprometida con la protección de personas, empresas y comunidades a través de soluciones tecnológicas avanzadas. Nos enfocamos en la prevención del crimen mediante el monitoreo, análisis y respuesta rápida ante situaciones de riesgo, utilizando sistemas de vigilancia de última generación y personal altamente capacitado
-</p>
-</section>
+<div class="container">
+    <section id="camaras">
+        <h2>Cámaras de Seguridad</h2>
+        <div class="services">
+            <div class="service">
+                <img src="https://via.placeholder.com/300?text=C%C3%A1mara+de+Seguridad" alt="Cámaras de seguridad">
+                <p>Venta e instalación de cámaras de seguridad para casa y negocio.</p>
+            </div>
+        </div>
+    </section>
 
-<section id="contacto">
-    <h2>Contacto</h2>
-    <p>Puedes ponerte en contacto con nosotros a través del siguiente correo: contacto@minegocio.com</p>
-</section>
+    <section id="alarmas">
+        <h2>Alarmas para Casa y Negocio</h2>
+        <div class="services">
+            <div class="service">
+                <img src="https://via.placeholder.com/300?text=Alarma" alt="Alarma">
+                <p>Sistemas de alarmas para protección de tu hogar y negocio, así como alarmas comunitarias.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gps">
+        <h2>GPS</h2>
+        <div class="services">
+            <div class="service">
+                <img src="https://via.placeholder.com/300?text=GPS" alt="GPS">
+                <p>Dispositivos GPS para seguimiento y localización en tiempo real.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mantenimiento">
+        <h2>Mantenimiento de Equipos de Computo</h2>
+        <div class="services">
+            <div class="service">
+                <img src="https://via.placeholder.com/300?text=Computadora" alt="Computadora">
+                <p>Servicios de mantenimiento de hardware y software para equipos de cómputo.</p>
+            </div>
+        </div>
+    </section>
+</div>
 
 <footer>
-    <p>&copy; 2024 Mi Negocio. Todos los derechos reservados.</p>
+    <p>&copy; 2024 Empresa de Seguridad y Mantenimiento</p>
 </footer>
 
 </body>
