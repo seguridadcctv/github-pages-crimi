@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -10,96 +10,106 @@
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
-            color: #333;
         }
+
         header {
-            background-color: #900; /* Color rojo */
+            background-color: #ff0000; /* Rojo */
             color: white;
-            padding: 15px;
+            padding: 10px 0;
             text-align: center;
         }
+
         nav {
             display: flex;
             justify-content: center;
-            background-color: #333; /* Color gris oscuro */
+            background-color: #333333; /* Gris oscuro */
         }
+
         nav a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
         }
+
         nav a:hover {
-            background-color: #900; /* Hover color rojo */
+            background-color: #ff0000; /* Rojo cuando se pasa el mouse */
+            color: white;
         }
+
         section {
             padding: 20px;
+        }
+
+        .tab-content {
             display: none;
         }
-        section.active {
+
+        .tab-content.active {
             display: block;
         }
-        .servicio {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        .servicio img {
+
+        /* Imágenes en la sección Servicios */
+        .services img {
             width: 150px;
-            height: 150px;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+
+        /* Colores de fondo */
+        .bg-gray {
+            background-color: #f0f0f0;
+        }
+
+        .bg-red {
+            background-color: #ff0000;
         }
     </style>
-    <script>
-        function mostrarSeccion(seccion) {
-            var secciones = document.querySelectorAll('section');
-            secciones.forEach(function(sec) {
-                sec.classList.remove('active');
-            });
-            document.getElementById(seccion).classList.add('active');
-        }
-    </script>
-</head>
-<body>
-    <header>
-        <h1>Criminal Watch</h1>
-    </header>
-
-    <nav>
-        <a href="javascript:void(0)" onclick="mostrarSeccion('nosotros')">Nosotros</a>
-        <a href="javascript:void(0)" onclick="mostrarSeccion('servicios')">Servicios</a>
-        <a href="javascript:void(0)" onclick="mostrarSeccion('contacto')">Contacto</a>
-    </nav>
-
-    <!-- Sección Nosotros -->
-    <section id="nosotros" class="active">
-        <h2>Nosotros</h2>
-        <p> Criminal Watch es una empresa especializada en la venta de equipos de seguridad electrónica y tecnologías avanzadas para la protección de bienes y personas. Con un enfoque en la innovación y la confiabilidad, ofrecemos una amplia gama de soluciones que incluyen cámaras de seguridad, sistemas de alarmas, GPS de rastreo y tecnologías de software y hardware de última generación.
-
-Nos dedicamos a brindar a nuestros clientes las herramientas necesarias para mantener sus espacios protegidos y vigilados, ya sea en entornos residenciales, comerciales o industriales. En Criminal Watch, nuestro compromiso es garantizar la seguridad a través de tecnología de vanguardia, siempre adaptándonos a las necesidades y demandas del mercado actual.
-
-       <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Criminal Watch</title>
 </head>
 <body>
 
-    <h1>Bienvenidos a Criminal Watch</h1>
-    
-    <video width="600" height="400" autoplay muted loop>
-        <source src="https://github.com/user-attachments/assets/737d1d86-cfe5-497f-908a-2e9c1d78f334" type="video/mp4">
-        Tu navegador no soporta la reproducción de videos.
-    </video>
+<header>
+    <h1>Criminal Watch</h1>
+</header>
+
+<nav>
+    <a href="#" onclick="showTab('nosotros')">Nosotros</a>
+    <a href="#" onclick="showTab('servicios')">Servicios</a>
+    <a href="#" onclick="showTab('contacto')">Contacto</a>
+</nav>
+
+<section id="nosotros" class="tab-content active">
+    <h2>Nosotros</h2>
+    <p>Criminal Watch es una empresa dedicada a la seguridad integral, ofreciendo soluciones avanzadas en monitoreo, control y protección para garantizar la tranquilidad de nuestros clientes. Nos especializamos en cámaras de seguridad, sistemas de alarmas, rastreo GPS y software de control.</p>
+</section>
+
+<section id="servicios" class="tab-content">
+    <h2>Servicios</h2>
+    <div class="services">
+        <h3>Cámaras de Seguridad</h3>
+        <img src="https://via.placeholder.com/150" alt="Cámaras de seguridad">
+        <h3>Alarmas</h3>
+        <img src="https://via.placeholder.com/150" alt="Alarmas">
+        <h3>GPS</h3>
+        <img src="https://via.placeholder.com/150" alt="GPS">
+        <h3>Hardware y Software</h3>
+        <p>Ofrecemos soluciones integrales en hardware y software para gestión de seguridad.</p>
+    </div>
+</section>
+
+<section id="contacto" class="tab-content">
+    <h2>Contacto</h2>
+    <p>Para más información, por favor contáctanos a través de nuestro correo: info@criminalwatch.com o llama al 555-1234.</p>
+</section>
+
+<script>
+    function showTab(tabId) {
+        const tabs = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => tab.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+    }
+</script>
 
 </body>
 </html>
-
-
-</body>
-</html>
-
-</body>
-</html>
-
