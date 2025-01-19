@@ -48,27 +48,12 @@
         section.active {
             display: block;
         }
-        .servicio {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 40px;
-            margin-top: 20px;
-        }
-        .servicio div {
-            text-align: center;
-        }
-        .servicio img {
-            width: 150px;
-            height: 150px;
-        }
         .video-container {
             display: flex;
             justify-content: center;
             margin-top: 20px;
         }
-        .video-container video {
+        .video-container iframe {
             max-width: 100%;
             height: auto;
         }
@@ -78,7 +63,6 @@
             padding: 10px;
             text-align: center;
         }
-        /* Estilo para el icono de WhatsApp y logo de la empresa */
         .whatsapp-icon {
             position: fixed;
             bottom: 20px;
@@ -106,93 +90,48 @@
 
     <header>
         <h1>Criminal Watch</h1>
-        <!-- Logo de la empresa en la parte superior izquierda -->
-        <img src="https://1drv.ms/i/s!Ak_Z0UgGlt434ALMPg-2Ngs4e9M9?embed=1&width=80&height=70" alt="Logo Criminal Watch" class="logo">
+        <img src="" alt="Logo Criminal Watch" class="logo">
     </header>
 
     <nav>
         <a href="javascript:void(0)" onclick="mostrarSeccion('nosotros')">Nosotros</a>
         <a href="javascript:void(0)" onclick="mostrarSeccion('servicios')">Servicios</a>
         <a href="javascript:void(0)" onclick="mostrarSeccion('contacto')">Contacto</a>
+        <a href="javascript:void(0)" onclick="mostrarSeccion('tienda')">Tienda</a>
     </nav>
 
     <!-- Sección Nosotros -->
     <section id="nosotros" class="active">
         <h2>Nosotros</h2>
-        <p>Criminal Watch es una empresa dedicada a ofrecer soluciones de seguridad electrónica y tecnología avanzada. Nuestro equipo de expertos se especializa en la venta, instalación y mantenimiento de dispositivos de seguridad y en la asesoría tecnológica personalizada para empresas y hogares. Nuestro objetivo es proporcionar herramientas confiables que protejan a nuestros clientes y optimicen sus recursos tecnológicos.</p>
-        <h3>Criminal Watch: Seguridad Electrónica y Tecnología</h3>
-        <p> Misión: Proteger y optimizar la seguridad de nuestros clientes mediante soluciones tecnológicas avanzadas.<p>
-         <p>Visión: Ser líderes en el sector de seguridad electrónica, con una amplia gama de servicios y productos que garantizan la tranquilidad y protección de quienes confían en nosotros.<p>
-        <h4>   
-        <div class="video-container">
-            <video width="600" controls>
-                <source src="<iframe width="560" height="315" src="https://www.youtube.com/embed/yqWX86uT5jM?si=aGu8Tzkw7_F0btx6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" type="video/mp4">
-                Tu navegador no soporta la reproducción de videos.
-            </video>
-        </div>
+        <p>Criminal Watch es una empresa dedicada a ofrecer soluciones de seguridad electrónica y tecnología avanzada.</p>
     </section>
 
     <!-- Sección Servicios -->
     <section id="servicios">
-        <h1>Nuestros Servicios
-Contamos con una variedad de servicios en seguridad electrónica y soluciones tecnológicas:
- 
-<p>Cámaras de Seguridad:
-
-Sistemas de monitoreo de alta calidad que permiten visualizar y grabar en tiempo real.
-Opciones para hogares, oficinas, comercios y comunidades.
-Asesoría e instalación de cámaras con tecnología de visión nocturna y conectividad remota.<p>
-
-<p>Alarmas:
-
-Sistemas de alarma de última generación para seguridad en hogares, oficinas y negocios.
-Sensores de movimiento, apertura de puertas y ventanas, y activación remota.
-Soluciones de alarmas comunitarias que ayudan a fortalecer la seguridad barrial y empresarial.<p>
-
-<p>GPS:
-
-Seguimiento en tiempo real de unidades de transporte público y privado.
-Monitoreo de flotas y vehículos particulares para empresas y usuarios individuales.
-Reportes detallados de ubicación, velocidad y rutas seguidas.<p>
-
-<p>Hardware y Software:
-
-Venta y mantenimiento de equipos de cómputo, optimización de sistemas y configuración personalizada.
-Actualización y reparación de hardware.
-Servicios de software, incluyendo instalación, recuperación de archivos y gestión de sistemas operativos.<p>  
         <h2>Servicios</h2>
-        <div class="servicio">
-            <div>
-                <h3>Cámaras de Seguridad</h3>
-                <img src="https://1drv.ms/i/c/37de960648d1d94f/UQRP2dFIBpbeIIA3_S8AAAAAABDuUVcgtQQdbmc?width=660" alt="Cámaras de Seguridad">
-            </div>
-            <div>
-                <h3>Alarmas</h3>
-                <img src="https://1drv.ms/i/c/37de960648d1d94f/UQRP2dFIBpbeIIA3_y8AAAAAAKRt3ou8mhzMCHc?width=660" alt="Alarmas">
-            </div>
-            <div>
-                <h3>GPS</h3>
-                <img src="https://1drv.ms/i/c/37de960648d1d94f/UQRP2dFIBpbeIIA3CDAAAAAAAPAqWjgSwx4vW7E?width=299&height=168" alt="GPS">
-            </div>
-            <div>
-                <h3>Hardware y Software</h3>
-                <img src="https://1drv.ms/i/c/37de960648d1d94f/UQRP2dFIBpbeIIA3ADAAAAAAAFaGx-qPSums8zc?width=450&height=334" alt="Hardware y Software">
-            </div>
-        </div>
+        <p>Explora nuestros servicios de seguridad y tecnología avanzada.</p>
     </section>
 
     <!-- Sección Contacto -->
     <section id="contacto">
         <h2>Contacto</h2>
-        <p>Puedes comunicarte con nosotros a través del correo: <strong>criminalwatchoficial@gmail.com</strong></p>
+        <p>Correo: <strong>criminalwatchoficial@gmail.com</strong></p>
+    </section>
+
+    <!-- Sección Tienda -->
+    <section id="tienda">
+        <h2>Tienda</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yqWX86uT5jM?si=aGu8Tzkw7_F0btx6" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Criminal Watch. Todos los derechos reservados.</p>
     </footer>
 
-    </footer>
-    <!-- Icono de WhatsApp en la parte inferior derecha -->
     <a href="https://wa.me/5215639786997?text=Hola%20Criminal%20Watch" target="_blank" class="whatsapp-icon">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
     </a>
